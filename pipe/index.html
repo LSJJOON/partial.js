@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Partial.js</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="pipe_.pipe는 함수들을 모아서 하나의 함수로 합성하는 함수입니다. 왼쪽에서 오른쪽으로 실행됩니다. 123456789function sum(a, b) &amp;#123;  return a + b;&amp;#125;function square(a) &amp;#123;  return a * a;&amp;#125;var f1 = _.pipe(sum, square, square);con">
+<meta name="keywords" content="pipe,mr,all,spread,tap">
+<meta property="og:type" content="article">
+<meta property="og:title" content="pipe">
+<meta property="og:url" content="https://marpple.github.io/partial.js/pipe/index.html">
+<meta property="og:site_name" content="Partial.js">
+<meta property="og:description" content="pipe_.pipe는 함수들을 모아서 하나의 함수로 합성하는 함수입니다. 왼쪽에서 오른쪽으로 실행됩니다. 123456789function sum(a, b) &amp;#123;  return a + b;&amp;#125;function square(a) &amp;#123;  return a * a;&amp;#125;var f1 = _.pipe(sum, square, square);con">
+<meta property="og:updated_time" content="2017-05-16T06:47:48.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="pipe">
+<meta name="twitter:description" content="pipe_.pipe는 함수들을 모아서 하나의 함수로 합성하는 함수입니다. 왼쪽에서 오른쪽으로 실행됩니다. 123456789function sum(a, b) &amp;#123;  return a + b;&amp;#125;function square(a) &amp;#123;  return a * a;&amp;#125;var f1 = _.pipe(sum, square, square);con">
+  
+  
+    <link rel="shortcut icon" href="/partial.js/css/images/favicon.ico">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/partial.js/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="header-outer">
+    <div id="header-title" class="inner">
+      <a href="/partial.js/">
+       
+        <div id="logo">Partial.js</div>
+       
+      </a>
+    </div>
+    <div id="header-middle" class="inner"></div>
+    <div id="header-menu" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/partial.js/about">About</a>
+        
+          <a class="main-nav-link" href="/partial.js/">Docs</a>
+        
+          <a class="main-nav-link" href="https://github.com/marpple/partial.js">Github</a>
+        
+          <a class="main-nav-link" href="https://marpple.github.io/partial.py">Partial.py</a>
+        
+      </nav>
+    </div>
+  </div>
+</header>
+      <div id="body">
+        <article id="pipe" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta"></div>
+  <div class="article-inner">
+    <div class="article-entry" itemprop="articleBody">
+      <h4 id="pipe"><a href="#pipe" class="headerlink" title="pipe"></a>pipe</h4><p><code>_.pipe</code>는 함수들을 모아서 하나의 함수로 합성하는 함수입니다. 왼쪽에서 오른쪽으로 실행됩니다.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">a, b</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> a + b;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">square</span>(<span class="params">a</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> a * a;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> f1 = _.pipe(sum, square, square);</div><div class="line"><span class="built_in">console</span>.log( f1(<span class="number">1</span>, <span class="number">2</span>) );</div><div class="line"><span class="comment">// 81</span></div></pre></td></tr></table></figure>
+<h4 id="mr"><a href="#mr" class="headerlink" title="mr"></a>mr</h4>
+    </div>
+  </div>
+</article>
+
+
+
+      </div>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/partial.js/about" class="mobile-nav-link">About</a>
+  
+    <a href="/partial.js/" class="mobile-nav-link">Docs</a>
+  
+    <a href="https://github.com/marpple/partial.js" class="mobile-nav-link">Github</a>
+  
+    <a href="https://marpple.github.io/partial.py" class="mobile-nav-link">Partial.py</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/partial.js/fancybox/jquery.fancybox.css">
+  <script src="/partial.js/fancybox/jquery.fancybox.pack.js"></script>
+
+<script src="/partial.js/js/partial.js"></script>
+<script src="/partial.js/js/script.js"></script>
+
+  </div>
+</body>
+</html>
