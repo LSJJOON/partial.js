@@ -55,8 +55,6 @@
       <div id="body">
         
   <aside id="sidebar">
-  
-    
   <div class="widget-wrap">
     
     <div class="widget-title">
@@ -66,7 +64,7 @@
       <ul>
         
         <li>
-          <a href="#partial">partial</a>
+          <a href="#_.partial">_.partial</a>
         </li>
         
         <li>
@@ -506,14 +504,6 @@
     </div>
     
   </div>
-
-
-<!---->
-<!--<div class="widget-wrap">-->
-  <!---->
-<!--</div>-->
-<!---->
-  
 </aside>
 
 <div id="main">
@@ -521,18 +511,18 @@
     
   
     <div id="post-partial">
-      <h1 class="post-title">Partial</h1>
+      <h2 class="post-title">Partial</h2>
       <article id="partial" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta"></div>
   <div class="article-inner">
     <div class="article-entry" itemprop="articleBody">
-      <h4 id="partial"><a href="#partial" class="headerlink" title="partial"></a>partial</h4><p><code>_.partial</code>을 통해 인자를 부분 적용해둔 함수를 만들 수 있습니다.</p>
+      <h3 id="partial"><a href="#partial" class="headerlink" title="_.partial"></a>_.partial</h3><p><code>_.partial</code>을 통해 인자를 부분 적용해둔 함수를 만들 수 있습니다.</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">a, b</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> a + b;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> add10 = _.partial(add, <span class="number">10</span>);</div><div class="line"><span class="built_in">console</span>.log( add10(<span class="number">5</span>) );</div><div class="line"><span class="comment">// 15</span></div></pre></td></tr></table></figure>
-<h4 id=""><a href="#" class="headerlink" title="_"></a>_</h4><p><code>_ == _.partial</code>입니다. <code>_.partial</code>을 <code>_</code>로 간결하게 표현할 수 있습니다.</p>
+<h3 id=""><a href="#" class="headerlink" title="_"></a>_</h3><p><code>_ == _.partial</code>입니다. <code>_.partial</code>을 <code>_</code>로 간결하게 표현할 수 있습니다.</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">a, b</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> a + b;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> add10 = _(add, <span class="number">10</span>);</div><div class="line"><span class="built_in">console</span>.log( add10(<span class="number">5</span>) );</div><div class="line"><span class="comment">// 15</span></div></pre></td></tr></table></figure>
 <p><code>_.partial</code> 혹은 <code>_</code>를 실행하면서 인자 자리에 자기 자신인 <code>_</code>를 넘기면 부분 적용할 인자를 건너띌 수 있습니다. <code>_</code>를 이용하면 원하는 곳에만 인자를 부분 적용해둘 수 있습니다. <code>_</code>가 있는 자리는 이후 실행시 채워집니다.</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sub</span>(<span class="params">a, b</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> a - b;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> sub10 = _.partial(sub, _, <span class="number">10</span>);</div><div class="line"><span class="built_in">console</span>.log( sub10(<span class="number">20</span>) );</div><div class="line"><span class="comment">// 10</span></div></pre></td></tr></table></figure>
-<h4 id="-1"><a href="#-1" class="headerlink" title="___"></a>___</h4>
+<h3 id="-1"><a href="#-1" class="headerlink" title="___"></a>___</h3>
     </div>
   </div>
 </article>
@@ -542,7 +532,7 @@
     </div>
   
     <div id="post-pipe">
-      <h1 class="post-title">Pipe</h1>
+      <h2 class="post-title">Pipe</h2>
       <article id="pipe" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta"></div>
   <div class="article-inner">
@@ -559,7 +549,7 @@
     </div>
   
     <div id="post-function">
-      <h1 class="post-title">Function</h1>
+      <h2 class="post-title">Function</h2>
       <article id="function" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta"></div>
   <div class="article-inner">
@@ -574,7 +564,7 @@
     </div>
   
     <div id="post-collection">
-      <h1 class="post-title">Collection</h1>
+      <h2 class="post-title">Collection</h2>
       <article id="collection" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta"></div>
   <div class="article-inner">
@@ -589,7 +579,7 @@
     </div>
   
     <div id="post-array">
-      <h1 class="post-title">Array</h1>
+      <h2 class="post-title">Array</h2>
       <article id="array" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta"></div>
   <div class="article-inner">
@@ -604,7 +594,7 @@
     </div>
   
     <div id="post-object">
-      <h1 class="post-title">Object</h1>
+      <h2 class="post-title">Object</h2>
       <article id="object" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta"></div>
   <div class="article-inner">
