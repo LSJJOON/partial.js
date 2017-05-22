@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Partial.js</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Partialpartial_.partial을 통해 인자를 부분 적용해둔 함수를 만들 수 있습니다.123456def add(a, b):   return a + b  add10 = _.partial(add, 10)result = add10(5)print(result) # 15 __ is _.partial입니다. _.partial을 _로 짧게 줄여서 사용할 수">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Partial.js Documents Page">
+<meta property="og:url" content="https://marpple.github.io/partial.js/docs/index.html">
+<meta property="og:site_name" content="Partial.js">
+<meta property="og:description" content="Partialpartial_.partial을 통해 인자를 부분 적용해둔 함수를 만들 수 있습니다.123456def add(a, b):   return a + b  add10 = _.partial(add, 10)result = add10(5)print(result) # 15 __ is _.partial입니다. _.partial을 _로 짧게 줄여서 사용할 수">
+<meta property="og:updated_time" content="2017-05-22T05:28:45.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Partial.js Documents Page">
+<meta name="twitter:description" content="Partialpartial_.partial을 통해 인자를 부분 적용해둔 함수를 만들 수 있습니다.123456def add(a, b):   return a + b  add10 = _.partial(add, 10)result = add10(5)print(result) # 15 __ is _.partial입니다. _.partial을 _로 짧게 줄여서 사용할 수">
+  
+  
+    <link rel="shortcut icon" href="/partial.js/css/images/favicon.ico">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/partial.js/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="header-outer">
+    <div id="header-title" class="inner">
+      <a href="/partial.js/">
+       
+        <div id="logo">Partial.js</div>
+       
+      </a>
+    </div>
+    <div id="header-middle" class="inner"></div>
+    <div id="header-menu" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/partial.js/">About</a>
+        
+          <a class="main-nav-link" href="/partial.js/docs">Docs</a>
+        
+          <a class="main-nav-link" href="https://github.com/marpple/partial.js">Github</a>
+        
+          <a class="main-nav-link" href="https://github.com/functionandjs/book">Book</a>
+        
+          <a class="main-nav-link" href="https://marpple.github.io/partial.py">Partial.py</a>
+        
+      </nav>
+    </div>
+  </div>
+</header>
+      <div id="body">
+        
+<aside id="sidebar">
+  
+  <div class="widget-wrap" id="docs">
+    
+    <div class="widget-title">
+      <a href="#partial">partial</a>
+    </div>
+    <div class="widget">
+      <ul>
+        
+        <li>
+          <a href="#partial">_.partial</a>
+        </li>
+        
+        <li>
+          <a href="#">_</a>
+        </li>
+        
+        <li>
+          <a href="#">__</a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="widget-title">
+      <a href="#pipe">pipe</a>
+    </div>
+    <div class="widget">
+      <ul>
+        
+        <li>
+          <a href="#pipe">pipe</a>
+        </li>
+        
+        <li>
+          <a href="#mr">mr</a>
+        </li>
+        
+        <li>
+          <a href="#all">all</a>
+        </li>
+        
+        <li>
+          <a href="#spread">spread</a>
+        </li>
+        
+        <li>
+          <a href="#tap">tap</a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="widget-title">
+      <a href="#collection">collection</a>
+    </div>
+    <div class="widget">
+      <ul>
+        
+        <li>
+          <a href="#each">each</a>
+        </li>
+        
+        <li>
+          <a href="#map">map</a>
+        </li>
+        
+        <li>
+          <a href="#reduce">reduce</a>
+        </li>
+        
+        <li>
+          <a href="#reduceRight">reduceRight</a>
+        </li>
+        
+        <li>
+          <a href="#find">find</a>
+        </li>
+        
+        <li>
+          <a href="#filter">filter</a>
+        </li>
+        
+        <li>
+          <a href="#where">where</a>
+        </li>
+        
+        <li>
+          <a href="#findWhere">findWhere</a>
+        </li>
+        
+        <li>
+          <a href="#reject">reject</a>
+        </li>
+        
+        <li>
+          <a href="#every">every</a>
+        </li>
+        
+        <li>
+          <a href="#some">some</a>
+        </li>
+        
+        <li>
+          <a href="#contains">contains</a>
+        </li>
+        
+        <li>
+          <a href="#invoke">invoke</a>
+        </li>
+        
+        <li>
+          <a href="#pluck">pluck</a>
+        </li>
+        
+        <li>
+          <a href="#max">max</a>
+        </li>
+        
+        <li>
+          <a href="#min">min</a>
+        </li>
+        
+        <li>
+          <a href="#sortBy">sortBy</a>
+        </li>
+        
+        <li>
+          <a href="#groupBy">groupBy</a>
+        </li>
+        
+        <li>
+          <a href="#countBy">countBy</a>
+        </li>
+        
+        <li>
+          <a href="#shuffle">shuffle</a>
+        </li>
+        
+        <li>
+          <a href="#random">random</a>
+        </li>
+        
+        <li>
+          <a href="#sample">sample</a>
+        </li>
+        
+        <li>
+          <a href="#toArray">toArray</a>
+        </li>
+        
+        <li>
+          <a href="#size">size</a>
+        </li>
+        
+        <li>
+          <a href="#partition">partition</a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="widget-title">
+      <a href="#array">array</a>
+    </div>
+    <div class="widget">
+      <ul>
+        
+        <li>
+          <a href="#first">first</a>
+        </li>
+        
+        <li>
+          <a href="#initial">initial</a>
+        </li>
+        
+        <li>
+          <a href="#last">last</a>
+        </li>
+        
+        <li>
+          <a href="#rest">rest</a>
+        </li>
+        
+        <li>
+          <a href="#compact">compact</a>
+        </li>
+        
+        <li>
+          <a href="#flatten">flatten</a>
+        </li>
+        
+        <li>
+          <a href="#without">without</a>
+        </li>
+        
+        <li>
+          <a href="#union">union</a>
+        </li>
+        
+        <li>
+          <a href="#intersection">intersection</a>
+        </li>
+        
+        <li>
+          <a href="#difference">difference</a>
+        </li>
+        
+        <li>
+          <a href="#uniq">uniq</a>
+        </li>
+        
+        <li>
+          <a href="#zip">zip</a>
+        </li>
+        
+        <li>
+          <a href="#unzip">unzip</a>
+        </li>
+        
+        <li>
+          <a href="#object">object</a>
+        </li>
+        
+        <li>
+          <a href="#indexOf">indexOf</a>
+        </li>
+        
+        <li>
+          <a href="#lastIndexOf">lastIndexOf</a>
+        </li>
+        
+        <li>
+          <a href="#sortedIndex">sortedIndex</a>
+        </li>
+        
+        <li>
+          <a href="#findIndex">findIndex</a>
+        </li>
+        
+        <li>
+          <a href="#findLastIndex">findLastIndex</a>
+        </li>
+        
+        <li>
+          <a href="#range">range</a>
+        </li>
+        
+        <li>
+          <a href="#removeByIndex">removeByIndex</a>
+        </li>
+        
+        <li>
+          <a href="#pop">pop</a>
+        </li>
+        
+        <li>
+          <a href="#shift">shift</a>
+        </li>
+        
+        <li>
+          <a href="#push">push</a>
+        </li>
+        
+        <li>
+          <a href="#unshift">unshift</a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="widget-title">
+      <a href="#object">object</a>
+    </div>
+    <div class="widget">
+      <ul>
+        
+        <li>
+          <a href="#keys">keys</a>
+        </li>
+        
+        <li>
+          <a href="#values">values</a>
+        </li>
+        
+        <li>
+          <a href="#mapObject">mapObject</a>
+        </li>
+        
+        <li>
+          <a href="#pairs">pairs</a>
+        </li>
+        
+        <li>
+          <a href="#invert">invert</a>
+        </li>
+        
+        <li>
+          <a href="#functions">functions</a>
+        </li>
+        
+        <li>
+          <a href="#findKey">findKey</a>
+        </li>
+        
+        <li>
+          <a href="#extend">extend</a>
+        </li>
+        
+        <li>
+          <a href="#pick">pick</a>
+        </li>
+        
+        <li>
+          <a href="#omit">omit</a>
+        </li>
+        
+        <li>
+          <a href="#defaults">defaults</a>
+        </li>
+        
+        <li>
+          <a href="#clone">clone</a>
+        </li>
+        
+        <li>
+          <a href="#Tap">Tap</a>
+        </li>
+        
+        <li>
+          <a href="#has">has</a>
+        </li>
+        
+        <li>
+          <a href="#method">method</a>
+        </li>
+        
+        <li>
+          <a href="#set">set</a>
+        </li>
+        
+        <li>
+          <a href="#unset">unset</a>
+        </li>
+        
+        <li>
+          <a href="#remove">remove</a>
+        </li>
+        
+        <li>
+          <a href="#isEqual">isEqual</a>
+        </li>
+        
+        <li>
+          <a href="#isMatch">isMatch</a>
+        </li>
+        
+        <li>
+          <a href="#isEmpty">isEmpty</a>
+        </li>
+        
+        <li>
+          <a href="#isElement">isElement</a>
+        </li>
+        
+        <li>
+          <a href="#isArray">isArray</a>
+        </li>
+        
+        <li>
+          <a href="#isObject">isObject</a>
+        </li>
+        
+        <li>
+          <a href="#isArguments">isArguments</a>
+        </li>
+        
+        <li>
+          <a href="#isFunction">isFunction</a>
+        </li>
+        
+        <li>
+          <a href="#isString">isString</a>
+        </li>
+        
+        <li>
+          <a href="#isNumber">isNumber</a>
+        </li>
+        
+        <li>
+          <a href="#isDate">isDate</a>
+        </li>
+        
+        <li>
+          <a href="#isRegExp">isRegExp</a>
+        </li>
+        
+        <li>
+          <a href="#isError">isError</a>
+        </li>
+        
+        <li>
+          <a href="#isArrayLike">isArrayLike</a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="widget-title">
+      <a href="#function">function</a>
+    </div>
+    <div class="widget">
+      <ul>
+        
+        <li>
+          <a href="#memoize">memoize</a>
+        </li>
+        
+        <li>
+          <a href="#delay">delay</a>
+        </li>
+        
+        <li>
+          <a href="#defer">defer</a>
+        </li>
+        
+        <li>
+          <a href="#once">once</a>
+        </li>
+        
+        <li>
+          <a href="#after">after</a>
+        </li>
+        
+        <li>
+          <a href="#before">before</a>
+        </li>
+        
+        <li>
+          <a href="#negate">negate</a>
+        </li>
+        
+        <li>
+          <a href="#right">right</a>
+        </li>
+        
+        <li>
+          <a href="#righta">righta</a>
+        </li>
+        
+      </ul>
+    </div>
+    
+  </div>
+  
+</aside>
+<div id="main">
+  <div id="posts-container">
+    <article id="undefined" class="article article-type-page" itemscope itemprop="blogPost">
+  <div class="article-meta"></div>
+  <div class="article-inner">
+    <div class="article-entry" itemprop="articleBody">
+      <h2 id="Partial"><a href="#Partial" class="headerlink" title="Partial"></a>Partial</h2><h3 id="partial"><a href="#partial" class="headerlink" title="partial"></a>partial</h3><p><code>_.partial</code>을 통해 인자를 부분 적용해둔 함수를 만들 수 있습니다.<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">add</span><span class="params">(a, b)</span>:</span> </div><div class="line">  <span class="keyword">return</span> a + b</div><div class="line">  </div><div class="line">add10 = _.partial(add, <span class="number">10</span>)</div><div class="line">result = add10(<span class="number">5</span>)</div><div class="line">print(result) <span class="comment"># 15</span></div></pre></td></tr></table></figure></p>
+<h3 id=""><a href="#" class="headerlink" title="_"></a>_</h3><p><code>_ is _.partial</code>입니다. <code>_.partial</code>을 <code>_</code>로 짧게 줄여서 사용할 수 있습니다.<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">add</span><span class="params">(a, b)</span>:</span> </div><div class="line">  <span class="keyword">return</span> a + b</div><div class="line">  </div><div class="line">add10 = _(add, <span class="number">10</span>)</div><div class="line">result = add10(<span class="number">5</span>)</div><div class="line">print(result) <span class="comment"># 15</span></div></pre></td></tr></table></figure></p>
+<p><code>_.partial</code> 혹은 <code>_</code>를 실행하면서 인자 자리에 자기 자신인 <code>_</code>를 넘기면 부분 적용할 인자를 건너띌 수 있습니다. <code>_</code>를 이용하면 원하는 곳에만 인자를 부분 적용해둘 수 있습니다. <code>_</code>가 있는 자리는 이후 실행시 채워집니다.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">sub</span><span class="params">(a, b)</span>:</span> </div><div class="line">  <span class="keyword">return</span> a - b</div><div class="line">  </div><div class="line">sub10 = _.partial(sub, _, <span class="number">10</span>)</div><div class="line">result = sub10(<span class="number">20</span>)</div><div class="line">print(result) <span class="comment"># 10</span></div></pre></td></tr></table></figure>
+<h2 id="Pipe"><a href="#Pipe" class="headerlink" title="Pipe"></a>Pipe</h2><h3 id="-1"><a href="#-1" class="headerlink" title="__"></a>__</h3><h3 id="pipe"><a href="#pipe" class="headerlink" title="pipe"></a>pipe</h3><p><code>_.pipe</code>는 함수들을 모아서 하나의 함수로 합성하는 함수입니다. 왼쪽에서 오른쪽으로 실행됩니다.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">sum</span><span class="params">(a, b)</span>:</span></div><div class="line">  <span class="keyword">return</span> a + b</div><div class="line">  </div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">square</span><span class="params">(a)</span>:</span></div><div class="line">  <span class="keyword">return</span> a * a</div><div class="line">  </div><div class="line">f1 = _.pipe(sum, square, square)</div><div class="line">result = f1(<span class="number">1</span>, <span class="number">2</span>)</div><div class="line">print( result ) <span class="comment"># 81</span></div></pre></td></tr></table></figure>
+<h3 id="mr"><a href="#mr" class="headerlink" title="mr"></a>mr</h3><h2 id="Collection"><a href="#Collection" class="headerlink" title="Collection"></a>Collection</h2><h3 id="each"><a href="#each" class="headerlink" title="each"></a>each</h3><h3 id="map"><a href="#map" class="headerlink" title="map"></a>map</h3><h3 id="reduce"><a href="#reduce" class="headerlink" title="reduce"></a>reduce</h3><h3 id="reduceRight"><a href="#reduceRight" class="headerlink" title="reduceRight"></a>reduceRight</h3><h3 id="find"><a href="#find" class="headerlink" title="find"></a>find</h3><h3 id="filter"><a href="#filter" class="headerlink" title="filter"></a>filter</h3><h3 id="where"><a href="#where" class="headerlink" title="where"></a>where</h3><h3 id="findWhere"><a href="#findWhere" class="headerlink" title="findWhere"></a>findWhere</h3><h3 id="reject"><a href="#reject" class="headerlink" title="reject"></a>reject</h3><h3 id="every"><a href="#every" class="headerlink" title="every"></a>every</h3><h3 id="some"><a href="#some" class="headerlink" title="some"></a>some</h3><h3 id="contains"><a href="#contains" class="headerlink" title="contains"></a>contains</h3><h3 id="invoke"><a href="#invoke" class="headerlink" title="invoke"></a>invoke</h3><h3 id="pluck"><a href="#pluck" class="headerlink" title="pluck"></a>pluck</h3><h3 id="max"><a href="#max" class="headerlink" title="max"></a>max</h3><h3 id="min"><a href="#min" class="headerlink" title="min"></a>min</h3><h3 id="sortBy"><a href="#sortBy" class="headerlink" title="sortBy"></a>sortBy</h3><h3 id="groupBy"><a href="#groupBy" class="headerlink" title="groupBy"></a>groupBy</h3><h3 id="countBy"><a href="#countBy" class="headerlink" title="countBy"></a>countBy</h3><h3 id="shuffle"><a href="#shuffle" class="headerlink" title="shuffle"></a>shuffle</h3><h3 id="random"><a href="#random" class="headerlink" title="random"></a>random</h3><h3 id="sample"><a href="#sample" class="headerlink" title="sample"></a>sample</h3><h3 id="toArray"><a href="#toArray" class="headerlink" title="toArray"></a>toArray</h3><h3 id="size"><a href="#size" class="headerlink" title="size"></a>size</h3><h3 id="partition"><a href="#partition" class="headerlink" title="partition"></a>partition</h3>
+    </div>
+  </div>
+</article>
+
+
+
+  </div>
+</div>
+      </div>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/partial.js/" class="mobile-nav-link">About</a>
+  
+    <a href="/partial.js/docs" class="mobile-nav-link">Docs</a>
+  
+    <a href="https://github.com/marpple/partial.js" class="mobile-nav-link">Github</a>
+  
+    <a href="https://github.com/functionandjs/book" class="mobile-nav-link">Book</a>
+  
+    <a href="https://marpple.github.io/partial.py" class="mobile-nav-link">Partial.py</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/partial.js/fancybox/jquery.fancybox.css">
+  <script src="/partial.js/fancybox/jquery.fancybox.pack.js"></script>
+
+<script src="/partial.js/js/partial.js"></script>
+<script src="/partial.js/js/script.js"></script>
+
+  </div>
+</body>
+</html>
