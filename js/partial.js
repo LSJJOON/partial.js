@@ -1,8 +1,7 @@
 // Partial.js 1.0
-// History - lmn.js -> lego.js -> L.js -> abc.js -> Partial.js
 // Project Lead - Indong Yoo
 // Maintainers - Piljung Park, Hanah Choi
-// Contributors - Joeun Ha, Byeongjin Kim, Jeongik Park, Hoonil Kim
+// Contributors - Joeun Ha, Byeongjin Kim, Jeongik Park
 // Respect Underscore.js
 // (c) 2015-2017 Marpple. MIT Licensed.
 !function(G) {
@@ -660,8 +659,11 @@
     str = str.replace(/\*/g, '"');
     if (!has_lambda) str = str.replace(/`/g, "'");
     if (lambda[str]) return lambda[str];
+
+    if (str.indexOf('#') == 0)
+      return lambda[str] = function(id) { return function($) { return $.id == id; } }(parseInt(str.substr(1)));
     if (!str.match(/=>/))
-      return lambda[str = str.replace('#', '$.id==')] = new Function('$', 'return (' + str + ')');
+      return lambda[str] = new Function('$', 'return (' + str + ')');
     if (has_lambda) return lambda[str] = eval(str); // es6 lambda
     var ex_par = str.split(/\s*=>\s*/);
     return lambda[str] = new Function(
