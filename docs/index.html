@@ -11,7 +11,7 @@
 <meta property="og:url" content="https://marpple.github.io/partial.js/docs/index.html">
 <meta property="og:site_name" content="Partial.js">
 <meta property="og:description" content="Partial_.partial_.partial을 통해 인자를 부분 적용해둔 함수를 만들 수 있습니다.12345678function add(a, b) &amp;#123;  return a + b;&amp;#125;  var add10 = _.partial(add, 10);var result = add10(5);console.log(result);// 15 __ == _.p">
-<meta property="og:updated_time" content="2017-05-23T06:07:58.000Z">
+<meta property="og:updated_time" content="2017-05-23T06:25:07.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Partial.js Documents Page">
 <meta name="twitter:description" content="Partial_.partial_.partial을 통해 인자를 부분 적용해둔 함수를 만들 수 있습니다.12345678function add(a, b) &amp;#123;  return a + b;&amp;#125;  var add10 = _.partial(add, 10);var result = add10(5);console.log(result);// 15 __ == _.p">
@@ -306,23 +306,11 @@
         </li>
         
         <li>
+          <a href="#remove">_.remove</a>
+        </li>
+        
+        <li>
           <a href="#removeByIndex">_.removeByIndex</a>
-        </li>
-        
-        <li>
-          <a href="#pop">_.pop</a>
-        </li>
-        
-        <li>
-          <a href="#shift">_.shift</a>
-        </li>
-        
-        <li>
-          <a href="#push">_.push</a>
-        </li>
-        
-        <li>
-          <a href="#unshift">_.unshift</a>
         </li>
         
       </ul>
@@ -388,14 +376,6 @@
         
         <li>
           <a href="#method">_.method</a>
-        </li>
-        
-        <li>
-          <a href="#set">_.set</a>
-        </li>
-        
-        <li>
-          <a href="#unset">_.unset</a>
         </li>
         
         <li>
@@ -497,6 +477,242 @@
         
         <li>
           <a href="#negate">_.negate</a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="widget-title">
+      <a href="#mutable">mutable</a>
+    </div>
+    <div class="widget">
+      <ul>
+        
+        <li>
+          <a href="#sel">_.sel</a>
+        </li>
+        
+        <li>
+          <a href="#set">_.set</a>
+        </li>
+        
+        <li>
+          <a href="#unset">_.unset</a>
+        </li>
+        
+        <li>
+          <a href="#push">_.push</a>
+        </li>
+        
+        <li>
+          <a href="#pop">_.pop</a>
+        </li>
+        
+        <li>
+          <a href="#shift">_.shift</a>
+        </li>
+        
+        <li>
+          <a href="#unshift">_.unshift</a>
+        </li>
+        
+        <li>
+          <a href="#extend2">_.extend2</a>
+        </li>
+        
+        <li>
+          <a href="#defaults2">_.defaults2</a>
+        </li>
+        
+        <li>
+          <a href="#remove2">_.remove2</a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="widget-title">
+      <a href="#immutable">immutable</a>
+    </div>
+    <div class="widget">
+      <ul>
+        
+        <li>
+          <a href="#im">_.im</a>
+        </li>
+        
+        <li>
+          <a href="#im-set">_.im.set</a>
+        </li>
+        
+        <li>
+          <a href="#im-unset">_.im.unset</a>
+        </li>
+        
+        <li>
+          <a href="#im-push">_.im.push</a>
+        </li>
+        
+        <li>
+          <a href="#im-pop">_.im.pop</a>
+        </li>
+        
+        <li>
+          <a href="#im-shift">_.im.shift</a>
+        </li>
+        
+        <li>
+          <a href="#im-unshift">_.im.unshift</a>
+        </li>
+        
+        <li>
+          <a href="#im-extend">_.im.extend</a>
+        </li>
+        
+        <li>
+          <a href="#im-extend2">_.im.extend2</a>
+        </li>
+        
+        <li>
+          <a href="#im-defaults">_.im.defaults</a>
+        </li>
+        
+        <li>
+          <a href="#im-defaults2">_.im.defaults2</a>
+        </li>
+        
+        <li>
+          <a href="#im-remove2">_.im.remove2</a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="widget-title">
+      <a href="#Box">Box</a>
+    </div>
+    <div class="widget">
+      <ul>
+        
+        <li>
+          <a href="#box">_.box</a>
+        </li>
+        
+        <li>
+          <a href="#box-sel">box.sel</a>
+        </li>
+        
+        <li>
+          <a href="#box-set">box.set</a>
+        </li>
+        
+        <li>
+          <a href="#box-unset">box.unset</a>
+        </li>
+        
+        <li>
+          <a href="#box-push">box.push</a>
+        </li>
+        
+        <li>
+          <a href="#box-pop">box.pop</a>
+        </li>
+        
+        <li>
+          <a href="#box-shift">box.shift</a>
+        </li>
+        
+        <li>
+          <a href="#box-unshift">box.unshift</a>
+        </li>
+        
+        <li>
+          <a href="#box-extend">box.extend</a>
+        </li>
+        
+        <li>
+          <a href="#box-extend2">box.extend2</a>
+        </li>
+        
+        <li>
+          <a href="#box-defaults">box.defaults</a>
+        </li>
+        
+        <li>
+          <a href="#box-defaults2">box.defaults2</a>
+        </li>
+        
+        <li>
+          <a href="#box-remove2">box.remove2</a>
+        </li>
+        
+        <li>
+          <a href="#box-im-set">box.im.set</a>
+        </li>
+        
+        <li>
+          <a href="#box-im-unset">box.im.unset</a>
+        </li>
+        
+        <li>
+          <a href="#box-im-push">box.im.push</a>
+        </li>
+        
+        <li>
+          <a href="#box-im-pop">box.im.pop</a>
+        </li>
+        
+        <li>
+          <a href="#box-im-shift">box.im.shift</a>
+        </li>
+        
+        <li>
+          <a href="#box-im-unshift">box.im.unshift</a>
+        </li>
+        
+        <li>
+          <a href="#box-im-extend">box.im.extend</a>
+        </li>
+        
+        <li>
+          <a href="#box-im-extend2">box.im.extend2</a>
+        </li>
+        
+        <li>
+          <a href="#box-im-defaults">box.im.defaults</a>
+        </li>
+        
+        <li>
+          <a href="#box-im-defaults2">box.im.defaults2</a>
+        </li>
+        
+        <li>
+          <a href="#box-im-remove2">box.im.remove2</a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="widget-title">
+      <a href="#Notification">Notification</a>
+    </div>
+    <div class="widget">
+      <ul>
+        
+        <li>
+          <a href="#noti-on">_.noti.on</a>
+        </li>
+        
+        <li>
+          <a href="#noti-off">_.noti.off</a>
+        </li>
+        
+        <li>
+          <a href="#noti-emit">_.noti.emit</a>
+        </li>
+        
+        <li>
+          <a href="#noti-emitAll">_.noti.emitAll</a>
         </li>
         
       </ul>
