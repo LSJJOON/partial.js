@@ -9,6 +9,32 @@
   //    }
   // });
 
+  var $sidebar = $('#sidebar'), $main = $('#main');
+
+  $main.on('scroll', function() {
+    sessionStorage.mainState = $main.scrollTop();
+  });
+
+  $sidebar.on('scroll', function() {
+    sessionStorage.sidebarState = $sidebar.scrollTop();
+  });
+
+  window.addEventListener('DOMContentLoaded', function() {
+    sessionStorage.currentLocation = window.location.href;
+
+    if (sessionStorage.prevLocation == sessionStorage.currentLocation) {
+      if (sessionStorage.mainState != "undefined") {
+        $main.scrollTop(sessionStorage.mainState);
+      }
+      if (sessionStorage.sidebarState != "undefined") {
+        $sidebar.scrollTop(sessionStorage.sidebarState);
+      }
+    }
+
+    sessionStorage.mainState = sessionStorage.sidebarState = undefined;
+    sessionStorage.prevLocation = sessionStorage.currentLocation;
+  });
+
   // Search
   var $searchWrap = $('#search-form-wrap'),
     isSearchAnim = false,
